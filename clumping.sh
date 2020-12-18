@@ -10,14 +10,13 @@
 #zcat ~/athena/doc_score/raw_ss/Michailidou/chr_ss/michailidou_${i}.ss.gz > ss
 #zcat ~/athena/doc_score/raw_ss/Christophersen/chr_ss/christophersen_${i}.ss.gz > ss
 
-author=christophersen
-upper_author=Christophersen
+author=mahajan
+upper_author=Mahajan
 
 for i in {1..22};do
   cat ~/Documents/CGNMX/GWAS/${upper_author}/${upper_author}.${i} > ss 
 
   #finds duplicates
-  #cat ~/athena/refs/1000genomes/eur.${i}.bim | cut -f2 | sort | uniq -d > dup_ids
   cat ~/Documents/BMEN/eur_files/eur.${i}.bim | cut -f2 | sort | uniq -d > dup_ids
 
   #perform clumping with plink. exclude duplicates. use 1000 genomes as reference bfile. clump based on rsID
