@@ -1,9 +1,10 @@
 # COMS4761
 
-A ReadMe file that tells exactly what is each file, how to compile (if relevant) and test-run the project on sample inputs to get the sample output, 
-how to really run the project on large files, if relevant, what are the parameters, what are the system requirements (e.g. are you using a particular
-version of MatLab/Python/R/Ruby/Java/C++/Cobol? Do you run on a particularly powerful machine/cloud instance? Which standard or add-on libraries would
-you need to have been previously installed?)
+I have Python 3.8.5 and R 4.0.3. 
+In Python, I use sklearn, numpy, pandas, and pdb. 
+In R, I use gplots, ggplot2, stringr, reshape2, cowplot, and viridis.
+
+I ran everything on my computer (which has very standard/low amounts of RAM) except get_eur.sh, which I ran on an external server.
 
 Files:
 The baseline_v1.2 annotations can be downloaded from https://storage.googleapis.com/broad-alkesgroup-public/LDSCORE/GRCh38/baseline_v1.2.tgz.
@@ -37,5 +38,5 @@ Test Input:
 To simplify the process, you can download the file keepss, which has already performed the first two steps (the get_eur and clumping). Additionally, you can download converted_annot.txt, which has already run annotate.R. All of this uses the Mahajan, type 2 diabetes data. You can then run score_and_cluster.py. To plot the comparisons, you will need to download the other files that end with .to_plot.gz. You can then run plotting_diseases.R, pca_gmm.py, pca_PGS.py, pca_super.py, plotting_PCA.R, super_comparisons.R, PGS_comparisons.R, gmm_comparisons.R, and heatmap.R.
 
 
-Outputs
+Outputs:
 The outputs of these files will be a series of plots and CSV files.
